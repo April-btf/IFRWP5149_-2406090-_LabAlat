@@ -3,4 +3,4 @@ Nama Lengkap    : Aprilia Fauziah
 Kelas           : C inf
 Hobby           : Menonton, Membaca, Melukis, bersepeda Semuanya saya suka
 
-Pertemuan 2 unified modelling language (UML)
+Pertemuan       : 02 unified modelling language (UML)

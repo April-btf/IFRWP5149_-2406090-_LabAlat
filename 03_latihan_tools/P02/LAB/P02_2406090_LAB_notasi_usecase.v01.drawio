@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="8n2ZkgeFzcvtPaz2TYJN">
+    <mxGraphModel dx="691" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5N1q3pgHBrCBThvdLsFB-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=250;height=50;" value="Sistem Informasi Peminjaman dan Pengembalian Peralatan Laboratorium&lt;br/&gt;Kampus" vertex="1">
+          <mxGeometry height="720" width="480" x="240" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5N1q3pgHBrCBThvdLsFB-4" parent="5N1q3pgHBrCBThvdLsFB-1" style="ellipse;" value="Lihat&#xa; Ketersediaan &#xa;Peralatan" vertex="1">
+          <mxGeometry height="60" width="110" x="70" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="5N1q3pgHBrCBThvdLsFB-5" parent="5N1q3pgHBrCBThvdLsFB-1" style="ellipse;" value="Kelola Data&#xa;Peralatan" vertex="1">
+          <mxGeometry height="60" width="110" x="300" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="5N1q3pgHBrCBThvdLsFB-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Mahasiswa" vertex="1">
+          <mxGeometry height="60" width="30" x="150" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="5N1q3pgHBrCBThvdLsFB-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Petugas&amp;nbsp;&lt;div&gt;Laboran&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="770" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="5N1q3pgHBrCBThvdLsFB-6" edge="1" parent="1" source="5N1q3pgHBrCBThvdLsFB-4" style="edgeStyle=none;curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" target="5N1q3pgHBrCBThvdLsFB-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5N1q3pgHBrCBThvdLsFB-7" edge="1" parent="1" source="5N1q3pgHBrCBThvdLsFB-5" style="curved=1;rounded=0;curveGeometry=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" target="5N1q3pgHBrCBThvdLsFB-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

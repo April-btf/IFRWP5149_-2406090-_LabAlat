@@ -6,4 +6,4 @@ Kelas           : C inf
 
 Hobby           : Menonton, Membaca, Melukis, bersepeda Semuanya saya suka
 
-Pertemuan       : 02 unified modelling language (UML)
+Pertemuan       : 04 tahap 5

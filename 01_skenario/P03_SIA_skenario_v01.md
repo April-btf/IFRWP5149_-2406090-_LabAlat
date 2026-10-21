@@ -10,6 +10,7 @@ dan memberikan catatan keputusan.
 
 <!-- Tabel Kebutuhan  -->
 
+<<<<<<< HEAD
 |  ID   |                             Kebutuhan_tugas                              |
 |-------|--------------------------------------------------------------------------|
 |SIA-R01|                  Mahasiswa dapat melihat jadwal kuliah                   |
@@ -18,6 +19,16 @@ dan memberikan catatan keputusan.
 |SIA-R04|             Sistem memvalidasi KRS sebagai bagian pengajuan              |
 |SIA-R05|Mahasiswa dapat mengunduh bukti jika memilihnya pada konfirmasi pengajuan |
 |SIA-R06|        Dosen wali dapat memproses persetujuan atau penolakan KRS         |
+=======
+|  ID   |                             Kebutuhan_tugas                               |
+|-------|---------------------------------------------------------------------------|
+|SIA-R01| Mahasiswa dapat melihat jadwal kuliah                                     |
+|SIA-R02| Admin akademik dapat mengelola jadwal kuliah                              |
+|SIA-R03| Mahasiswa dapat mengajukan KRS                                            |
+|SIA-R04| Sistem memvalidasi KRS sebagai bagian pengajuan                           |
+|SIA-R05| Mahasiswa dapat mengunduh bukti jika memilihnya pada konfirmasi pengajuan |
+|SIA-R06| Dosen wali dapat memproses persetujuan atau penolakan KRS                 |
+>>>>>>> 2599aee1c54fc8d09a37c91575f7023161810a11
 
 <!-- Batas sistem dan aturan -->
 

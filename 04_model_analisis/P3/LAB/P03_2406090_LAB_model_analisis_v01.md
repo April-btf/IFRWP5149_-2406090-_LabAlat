@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Sumber                   Hubungan                Tujuan
 Mahasiswa                Asosiasi                LAB-UC01
 Mahasiswa                Asosiasi                LAB-UC03
@@ -7,3 +8,15 @@ Petugas_laboratorium     Asosiasi               LAB-UC06
 Kepala_laboratorium      Asosiasi               LAB-UC07
 LAB-UC03                «include»               LAB-UC04
 LAB-UC05                «extend»                LAB-UC03
+=======
+| Sumber                | Hubungan    |Tujuan   |
+| --------------------- | ----------- | ------- |
+| Mahasiswa             | Asosiasi    |LAB-UC01 |
+| Mahasiswa             | Asosiasi    |LAB-UC03 |
+| Mahasiswa             | Asosiasi    |LAB-UC05 |
+| Petugas_laboratorium  | Asosiasi    |LAB-UC02 |
+| Petugas_laboratorium  | Asosiasi    |LAB-UC06 |
+| Kepala_laboratorium   | Asosiasi    |LAB-UC07 |
+| LAB-UC03              | «include»   |LAB-UC04 | 
+| LAB-UC05              | «extend»    |LAB-UC03 |
+>>>>>>> 2599aee1c54fc8d09a37c91575f7023161810a11

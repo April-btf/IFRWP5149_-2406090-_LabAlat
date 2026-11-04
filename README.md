@@ -6,4 +6,4 @@ Kelas           : C inf
 
 Hobby           : Menonton, Membaca, Melukis, bersepeda Semuanya saya suka
 
-Pertemuan       : 04 USE CASE DIAGRAM LANJUTAN: GENERALIZATION DAN COLLABORATION
+Pertemuan       : 06 ACTIVITY DIAGRAM: DARI SKENARIO KE ALUR AKTIVITAS LAB

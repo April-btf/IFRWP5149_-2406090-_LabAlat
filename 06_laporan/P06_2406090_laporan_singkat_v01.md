@@ -51,12 +51,17 @@ Hal-hal penting pada hasil diagram LAB:
 
 Pada studi kasus Sistem Informasi Akademik (SIA) disusun activity diagram dari tabel skenario pertemuan 5, yaitu:
 
-| No. | Activity diagram | Sumber skenario | Swimlane | Unsur utama |
-|---|---|---|---|---|
-| 1 | Input Nilai Mata Kuliah | SIA-UC08 | Dosen, Sistem | Decision Dosen memiliki hak akses? [memiliki]/[tidak memiliki]; Nilai dalam rentang yang sah? [sah]/[di luar rentang]; Data nilai lengkap? [lengkap]/[tidak lengkap] |
-| 2 | Lihat KHS | SIA-UC09 | Mahasiswa, Sistem | Decision Data KHS ditemukan? dan Nilai sudah dipublikasikan?; hanya nilai yang sudah dipublikasikan ditampilkan |
-| 3 | Lihat Kalender Akademik | SIA-UC07 | Civitas Akademika, Sistem | Decision Kalender akademik tersedia? [tersedia]/[belum tersedia] |
-| 4 | Kelola Data Mahasiswa | SIA-UC10, UC11, UC12, UC13 | Admin Akademik, Sistem | Decision fungsi pengelolaan [tambah], [ubah], [hapus]; penghapusan ditolak bila mahasiswa memiliki data akademik aktif |
+| No. | Activity diagram        | Sumber skenario                   | Swimlane                  | Unsur utama                                                                                                                                         |
+| --- | ----------------------- | --------------------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Ajukan KRS              | Pengajuan KRS, SIA-UC03, SIA-UC04 | Mahasiswa, Sistem         | Include Validasi KRS, decision Validasi memenuhi pemeriksaan? dengan guard [memenuhi] dan [tidak_memenuhi], serta extend Unduh Bukti Pengajuan KRS. |
+| 2   | Input Nilai Mata Kuliah | SIA-UC08                          | Dosen, Sistem             | Decision Dosen memiliki hak akses?, Nilai dalam rentang yang sah?, dan Data nilai lengkap?                                                          |
+| 3   | Kelola Data Mahasiswa   | SIA-UC09        | Admin Akademik, Sistem    | Decision fungsi pengelolaan [tambah], [ubah], [hapus], pemeriksaan data ditemukan, syarat penghapusan, dan kelengkapan data.                        |
+| 4   | Kelola Jadwal Kuliah    | Pengelolaan Jadwal Kuliah         | Admin Akademik, Sistem    | Decision Data lengkap dan tidak bentrok? serta konfirmasi penyimpanan jadwal.                                                                       |
+| 5   | Lihat Jadwal Kuliah     | Lihat Jadwal Kuliah               | Mahasiswa, Sistem         | Decision Jadwal kuliah tersedia? dengan guard [tersedia] dan [belum_tersedia].                                                                      |
+| 6   | Lihat Kalender Akademik | SIA-UC06                          | Civitas Akademika, Sistem | Decision Kalender akademik tersedia? dengan guard [tersedia] dan [belum_tersedia].                                                                  |
+| 7   | Lihat KHS               | SIA-UC08                          | Mahasiswa, Sistem         | Decision Data KHS ditemukan? dan Nilai sudah dipublikasikan?                                                                                        |
+| 8   | Proses Keputusan KRS    | Proses Keputusan KRS              | Dosen Wali, Sistem        | Decision Ada pengajuan KRS yang menunggu? dan Keputusan dan catatan lengkap?                                                                        |
+| 9   | Unduh Bukti KRS         | SIA-UC04                          | Mahasiswa, Sistem         | Decision Bukti berhasil disiapkan? dengan guard [berhasil] dan [gagal].                                                                             |
 
 ### D. Analisis
 
@@ -65,7 +70,7 @@ Pada studi kasus Sistem Informasi Akademik (SIA) disusun activity diagram dari t
 3. Use case yang tidak dibuatkan activity sendiri. LAB-UC04 dan LAB-UC12 tercakup sebagai action include pada activity induknya, sedangkan LAB-UC08, UC09, dan UC10 tercakup sebagai cabang varian pada Activity Kelola Data Peralatan.
 4. Pembagian swimlane. Action aktor ditempatkan pada swimlane aktor yang melakukannya, dan respon sistem pada swimlane Sistem. Kepala Laboratorium hanya muncul pada Activity Lihat Laporan Peminjaman (LAB-UC07) dan tidak muncul pada Activity Peminjaman maupun Pengembalian, karena fungsinya bukan bagian dari kedua alur tersebut. Mahasiswa tidak digambar pada Activity Proses Keputusan Peminjaman karena pada skenario LAB-UC06 mahasiswa tidak melakukan langkah apa pun.
 5. Fork dan join. Fork dan join dipakai pada Activity Pengembalian karena pemeriksaan kondisi fisik dan pemeriksaan kelengkapan aksesoris tidak saling bergantung. Join memastikan keputusan akhir baru diambil setelah kedua pemeriksaan selesai; proses paralel tidak disatukan dengan merge karena merge tidak menunggu proses lain selesai.
-6. Decision, guard, dan merge. Setiap alur keluar decision diberi guard dalam kurung siku yang saling lepas dan menutup semua kemungkinan, misalnya [tersedia] dan [tidak tersedia]. Cabang yang tidak kembali ke alur utama bermuara ke activity final node dengan keadaan akhir yang jelas, misalnya pesan penolakan atau pemberitahuan.
+6. Decision, guard, dan merge. Setiap alur keluar decision diberi guard dalam kurung siku yang saling lepas dan menutup semua kemungkinan, misalnya [tersedia] dan [tidak_tersedia]. Cabang yang tidak kembali ke alur utama bermuara ke activity final node dengan keadaan akhir yang jelas, misalnya pesan penolakan atau pemberitahuan.
 7. Kendala dan perbaikan. Kesalahan yang paling sering terjadi adalah guard yang belum lengkap, cabang yang menggantung, dan action yang salah swimlane. Karena itu seluruh diagram diperiksa dengan checklist penilaian sebelum diekspor ke PNG.
 
 ### E. Kesimpulan

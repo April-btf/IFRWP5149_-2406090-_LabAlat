@@ -1,0 +1,80 @@
+<mxfile host="65bd71144e">
+    <diagram name="Activity Lihat Jadwal Kuliah" id="d_uc01">
+        <mxGraphModel dx="1294" dy="678" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1160" pageHeight="761" math="0" shadow="0">
+            <root>
+                <mxCell id="0" />
+                <mxCell id="1" parent="0" />
+                <mxCell id="11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry width="400" height="721" as="geometry" />
+                </mxCell>
+                <mxCell id="12" value="Mahasiswa" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+                    <mxGeometry width="400" height="26" as="geometry" />
+                </mxCell>
+                <mxCell id="13" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry width="720" height="721" as="geometry" x="400" />
+                </mxCell>
+                <mxCell id="14" value="Sistem" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+                    <mxGeometry width="720" height="26" as="geometry" x="400" />
+                </mxCell>
+                <mxCell id="ini" value="" style="ellipse;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry width="24" height="24" as="geometry" x="188.0" y="58" />
+                </mxCell>
+                <mxCell id="n1" value="Membuka fungsi Lihat Jadwal Kuliah" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fontSize=11;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry width="210" height="50" as="geometry" x="95.0" y="115" />
+                </mxCell>
+                <mxCell id="n2" value="Mengambil data jadwal kuliah yang berlaku bagi mahasiswa" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fontSize=11;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry width="230" height="50" as="geometry" x="525.0" y="215" />
+                </mxCell>
+                <mxCell id="d1" value="Jadwal kuliah tersedia?" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry width="230" height="90" as="geometry" x="525.0" y="315" />
+                </mxCell>
+                <mxCell id="n3" value="Menampilkan jadwal kuliah berupa mata kuliah, hari, jam, dan ruang" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fontSize=11;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry width="230" height="50" as="geometry" x="525.0" y="460" />
+                </mxCell>
+                <mxCell id="r1" value="Menampilkan pesan jadwal kuliah belum tersedia" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fontSize=11;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry width="210" height="50" as="geometry" x="840.0" y="460.0" />
+                </mxCell>
+                <mxCell id="n4" value="Melihat jadwal kuliah" style="rounded=1;whiteSpace=wrap;html=1;arcSize=18;fontSize=11;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry width="210" height="50" as="geometry" x="95.0" y="550" />
+                </mxCell>
+                <mxCell id="m1" value="" style="rhombus;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry width="30" height="30" as="geometry" x="625.0" y="560.0" />
+                </mxCell>
+                <mxCell id="fin" value="" style="shape=endState;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry width="32" height="32" as="geometry" x="624.0" y="645.0" />
+                </mxCell>
+                <mxCell id="e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=9;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ini" target="n1">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=9;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n1" target="n2">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=9;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n2" target="d1">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="e4" value="[tersedia]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=9;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d1" target="n3">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="e5" value="[belum tersedia]" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=9;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="d1" target="r1">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=9;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="n3" target="n4">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=9;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="n4" target="m1">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=9;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="r1" target="m1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="945" y="575" />
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=9;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m1" target="fin">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
